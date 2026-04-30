@@ -1,0 +1,65 @@
+/* Apply the border-box model so padding doesn't break your widths */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdfaf6; /* A warm, kitchen-like off-white */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  line-height: 1.6;
+  
+  /* Centering the entire recipe card */
+  max-width: 800px;
+  margin: 40px auto; 
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #b22222; /* Firebrick red for a saucy feel */
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Removes weird gaps at the bottom of the image */
+  margin: 20px auto; /* Centers the image and adds space above/below */
+}
+
+/* Make your Ingredients and Steps look like cards */
+ul {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 30px 50px; /* Big internal space for readability */
+  margin-bottom: 30px;
+  border-radius: 12px;
+}
+
+ol {
+  font-weight: bold;
+  color: #b22222;
+}
+
+li {
+  margin-bottom: 12px; /* Space between each item */
+}
+
+h2, h3 {
+  border-bottom: 2px solid #b22222;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+a {
+  color: #b22222;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
